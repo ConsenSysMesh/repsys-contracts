@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "install": "./node_modules/truffle/cli.js compile",
+    "compile": "./node_modules/truffle/cli.js compile",
     "test": "./node_modules/truffle/cli.js test"
   },
   "repository": {

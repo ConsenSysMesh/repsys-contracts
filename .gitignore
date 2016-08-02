@@ -10,4 +10,4 @@ shippable
 node_modules
 
 # Generated files
-build/
+build/index.html
