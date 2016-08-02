@@ -1,0 +1,27 @@
+{
+  "mainnet": {
+    "web3Host": "mainnet.infura.io",
+    "web3Port": "8545",
+    "web3Protocol": "https",
+    "creditScore": "0x0"
+  },
+  "morden": {
+    "web3Host": "morden.infura.io",
+    "web3Port": "8545",
+    "web3Protocol": "https",
+    "creditScore": "0x0"
+  },
+  "consensysnet": {
+    "web3Host": "consensysnet.infura.io",
+    "web3Port": "8545",
+    "web3Protocol": "https",
+    "creditScore": "0x0c37520af9b346d413d90805e86064b47642478e"
+  },
+  "local": {
+    "web3Host": "locahost",
+    "web3Port": "8545",
+    "web3Protocol": "http",
+    "creditScore": "0x0"
+  },
+  "selection": "local"
+}
