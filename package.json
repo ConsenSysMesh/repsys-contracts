@@ -6,7 +6,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "truffle test"
+    "install": "./node_modules/truffle/cli.js compile",
+    "test": "./node_modules/truffle/cli.js test"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ConsenSys/repsys-contracts/issues"
   },
-  "homepage": "https://github.com/ConsenSys/repsys-contracts#readme"
+  "homepage": "https://github.com/ConsenSys/repsys-contracts#readme",
+  "dependencies": {
+    "truffle": "^2.0.4"
+  }
 }
