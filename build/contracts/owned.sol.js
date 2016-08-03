@@ -337,12 +337,24 @@ var Web3 = require("web3");
         "type": "function"
       },
       {
+        "constant": true,
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "type": "function"
+      },
+      {
         "inputs": [],
         "type": "constructor"
       }
     ],
-    "unlinked_binary": "0x606060405260008054600160a060020a0319163317905560658060226000396000f3606060405260e060020a600035046329b3d4138114601a575b005b60186004356000543373ffffffffffffffffffffffffffffffffffffffff908116911614156062576000805473ffffffffffffffffffffffffffffffffffffffff1916821790555b5056",
-    "updated_at": 1470246557418,
+    "unlinked_binary": "0x606060405260008054600160a060020a0319163317905560978060226000396000f3606060405260e060020a600035046329b3d413811460245780638da5cb5b14606f575b005b60226004356000543373ffffffffffffffffffffffffffffffffffffffff90811691161415606c576000805473ffffffffffffffffffffffffffffffffffffffff1916821790555b50565b608d60005473ffffffffffffffffffffffffffffffffffffffff1681565b6060908152602090f3",
+    "updated_at": 1470262086835,
     "links": {}
   }
 };
