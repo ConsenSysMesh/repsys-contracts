@@ -1,6 +1,6 @@
 {
   "name": "repsys-contracts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "RepSys Contracts",
   "directories": {
     "test": "test"

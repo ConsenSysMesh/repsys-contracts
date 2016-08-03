@@ -11,5 +11,5 @@ contract owned{
     if(msg.sender==owner) _
   }
 
-  address owner;
+  address public owner;
 }

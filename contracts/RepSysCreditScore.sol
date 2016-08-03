@@ -1,4 +1,9 @@
-contract RepSysCreditScore {
+import "owned.sol";
+
+contract RepSysCreditScore is owned {
+
+	event CreditScoreSet(address addr, address setter);
+
 	mapping (address => CreditScore) scores;
 
 	struct CreditScore {
@@ -9,13 +14,14 @@ contract RepSysCreditScore {
 	}
 
 	function setScore(address target, bytes2 _letter,
-					uint _number, uint _expire, bytes _ipfsHash) {
+					uint _number, uint _expire, bytes _ipfsHash) onlyowner {
 		scores[target] = CreditScore({
 			letter: _letter,
 			number: _number,
 			expire: _expire,
 			ipfsHash: _ipfsHash
 			});
+		CreditScoreSet(target,msg.sender);
 	}
 
 	function getScoreLetter(address addr) returns(bytes2) {

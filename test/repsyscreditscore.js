@@ -27,4 +27,31 @@ contract('RepSysCreditScore', function(accounts) {
     }).then(done).catch(done);
   });
 
+
+  it("should allow only owners", function(done) {
+    var csContract;
+    //console.log(accounts[0]);
+    //console.log(accounts[1]);
+    RepSysCreditScore.new({from: accounts[0]})
+    .then(function(_csContract){
+      csContract = _csContract;
+      return csContract.owner.call();
+    })
+    .then(function(_owner){
+      //console.log(_owner);
+      return csContract.newowner(accounts[1]);
+    })
+    .then(function(tx) {
+      return csContract.setScore(accounts[2],"Z",6789,12345678,"Quemchi",{from: accounts[1]});
+    })
+    .then(function(tx2){
+      return csContract.getScoreNumber.call(accounts[2]);
+    })
+    .then(function(_number){
+      assert.equal('6789',_number.toString(),"number dont match");
+      //console.log(tx);
+    }).then(done).catch(done);
+
+  });
+
 });
