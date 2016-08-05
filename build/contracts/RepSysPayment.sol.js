@@ -322,6 +322,118 @@ var Web3 = require("web3");
   };
 
   Contract.all_networks = {
+  "161": {
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "addr",
+            "type": "address"
+          }
+        ],
+        "name": "newowner",
+        "outputs": [],
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [],
+        "name": "kill",
+        "outputs": [],
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "addr",
+            "type": "address"
+          }
+        ],
+        "name": "requestCreditScoreRecalc",
+        "outputs": [],
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "newPrice",
+            "type": "uint256"
+          }
+        ],
+        "name": "setRecalcPrice",
+        "outputs": [],
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "send",
+        "outputs": [],
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "recalcPrice",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "name": "requester",
+            "type": "address"
+          }
+        ],
+        "name": "RequestRecalc",
+        "type": "event"
+      }
+    ],
+    "unlinked_binary": "0x606060405260008054600160a060020a0319163317905560006001556101af806100296000396000f3606060405236156100615760e060020a600035046329b3d413811461006357806341c0e1b5146100a357806362f3b580146100cb5780638da5cb5b1461011b578063b1c4e3741461012d578063d0679d341461014f578063f2d99d8314610196575b005b61006160043560005433600160a060020a03908116911614156100a0576000805473ffffffffffffffffffffffffffffffffffffffff1916821790555b50565b61006160005433600160a060020a03908116911614156101a957600054600160a060020a0316ff5b6100616004356001543414156100a057600160a060020a038082166060908152339091166080527f76b2a81916c14e51d5ba2f3c3029cc44a9203b1a3956fe747cacebc4a9c0430090604090a150565b61019f600054600160a060020a031681565b61006160043560005433600160a060020a03908116911614156100a057600155565b61006160043560243560005433600160a060020a03908116911614156101ab57600160a060020a038216600082606082818181858883f1935050505015156101ab57610002565b61019f60015481565b6060908152602090f35b565b505056",
+    "updated_at": 1470373841143,
+    "links": {},
+    "address": "0x0c0d60c23a9fd03070d13021282017732d9b7edb"
+  },
   "default": {
     "abi": [
       {
@@ -430,9 +542,9 @@ var Web3 = require("web3");
       }
     ],
     "unlinked_binary": "0x606060405260008054600160a060020a0319163317905560006001556101af806100296000396000f3606060405236156100615760e060020a600035046329b3d413811461006357806341c0e1b5146100a357806362f3b580146100cb5780638da5cb5b1461011b578063b1c4e3741461012d578063d0679d341461014f578063f2d99d8314610196575b005b61006160043560005433600160a060020a03908116911614156100a0576000805473ffffffffffffffffffffffffffffffffffffffff1916821790555b50565b61006160005433600160a060020a03908116911614156101a957600054600160a060020a0316ff5b6100616004356001543414156100a057600160a060020a038082166060908152339091166080527f76b2a81916c14e51d5ba2f3c3029cc44a9203b1a3956fe747cacebc4a9c0430090604090a150565b61019f600054600160a060020a031681565b61006160043560005433600160a060020a03908116911614156100a057600155565b61006160043560243560005433600160a060020a03908116911614156101ab57600160a060020a038216600082606082818181858883f1935050505015156101ab57610002565b61019f60015481565b6060908152602090f35b565b505056",
-    "updated_at": 1470262086820,
+    "updated_at": 1470373174420,
     "links": {},
-    "address": "0xf67cfab16f96d14112383289329fe86ebb6c843f"
+    "address": "0x2fcc1949c1747365335f3643e86a02fe20795165"
   }
 };
 

@@ -322,6 +322,44 @@ var Web3 = require("web3");
   };
 
   Contract.all_networks = {
+  "161": {
+    "abi": [
+      {
+        "constant": false,
+        "inputs": [
+          {
+            "name": "addr",
+            "type": "address"
+          }
+        ],
+        "name": "newowner",
+        "outputs": [],
+        "type": "function"
+      },
+      {
+        "constant": false,
+        "inputs": [],
+        "name": "kill",
+        "outputs": [],
+        "type": "function"
+      },
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+          {
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "type": "function"
+      }
+    ],
+    "unlinked_binary": "0x606060405260008054600160a060020a0319163317905560af8060226000396000f3606060405260e060020a600035046329b3d4138114602e57806341c0e1b514606c5780638da5cb5b146092575b005b602c60043560005433600160a060020a03908116911614156069576000805473ffffffffffffffffffffffffffffffffffffffff1916821790555b50565b602c60005433600160a060020a039081169116141560ad57600054600160a060020a0316ff5b60a3600054600160a060020a031681565b6060908152602090f35b56",
+    "updated_at": 1470373841137,
+    "links": {}
+  },
   "default": {
     "abi": [
       {
@@ -357,7 +395,7 @@ var Web3 = require("web3");
       }
     ],
     "unlinked_binary": "0x606060405260008054600160a060020a0319163317905560af8060226000396000f3606060405260e060020a600035046329b3d4138114602e57806341c0e1b514606c5780638da5cb5b146092575b005b602c60043560005433600160a060020a03908116911614156069576000805473ffffffffffffffffffffffffffffffffffffffff1916821790555b50565b602c60005433600160a060020a039081169116141560ad57600054600160a060020a0316ff5b60a3600054600160a060020a031681565b6060908152602090f35b56",
-    "updated_at": 1470262086807,
+    "updated_at": 1470373174408,
     "links": {}
   }
 };
