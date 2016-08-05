@@ -12,7 +12,7 @@
   "consensysnet": {
     "web3Host": "consensysnet.infura.io",
     "web3Port": "8545",
-    "web3Protocol": "https",
+    "web3Protocol": "https"
   },
   "local": {
     "web3Host": "locahost",
