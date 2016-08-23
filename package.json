@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/ConsenSys/repsys-contracts#readme",
   "dependencies": {
-    "truffle": "^2.0.4"
+    "truffle": "^2.0.7"
   }
 }
