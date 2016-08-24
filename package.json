@@ -1,6 +1,6 @@
 {
   "name": "repsys-contracts",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "RepSys Contracts",
   "directories": {
     "test": "test"
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/ConsenSys/repsys-contracts#readme",
   "dependencies": {
-    "truffle": "^2.0.4"
+    "truffle": "^2.0.7"
   }
 }
