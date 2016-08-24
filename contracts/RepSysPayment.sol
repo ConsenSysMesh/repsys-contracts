@@ -16,9 +16,8 @@ contract RepSysPayment is  mortal {
   //Public function to request a CreditScore Recalc
   //Sender must send recalcPrice to trigger the event
 	function requestCreditScoreRecalc(address addr){
-		if(msg.value == recalcPrice){
-      RequestRecalc(addr,msg.sender);
-		}
+		if(msg.value < recalcPrice) throw;
+    RequestRecalc(addr,msg.sender);
 	}
 
   function send(address addr,uint amount) onlyowner {
